@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mai Nguyễn Văn Kiệt</title>
+    <script>
+        var n = prompt("Nhập số lượng số muốn hiển thị");
+        var f0 = 1;
+        var f1 = 2;
+    </script>
+    <style>
+        body{
+            margin: 0;
+            text-align: center;
+        }
+        span{
+            border: 1px black solid;
+            border-radius: 100px;
+            background-color: black;
+            color: white;
+            font-size: 5em;
+            margin: 20px;
+            padding: 20px;
+        }
+        .day{
+            border: 1px solid red;
+            border-radius: 40px;
+            margin: 10px 70px;
+            padding: 50px 0;
+        }
+        .main{
+            border: 5px solid blue;
+            margin: 100px;
+            border-radius: 20px;
+        }
+        .main p{
+            font-size: 8em;
+            color: chocolate;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <p>Dãy fibonacy</p>
+        <div class="day">
+            <script>
+                for(var i = 1; i <= n; i++){
+                    var f = f0 + f1;
+                    f0 = f1;
+                    f1 = f;
+                    document.write("<span>" + f + "</span>");
+                    if(i % 10 == 0){
+                        document.write("<br>");
+                    }
+                }
+            </script>
+        </div>
+    </div>
+</body>
+</html>
