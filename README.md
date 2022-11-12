@@ -1,2 +1,0 @@
-# fibonacy
-Dãy fibonacy
